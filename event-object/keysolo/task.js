@@ -17,6 +17,16 @@ class Game {
   }
 
   registerEvents() {
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Shift') return;
+      let symbolCurrent = this.currentSymbol.textContent;
+      let inputSymbol = event.key;
+      if (inputSymbol.toLowerCase() === symbolCurrent.toLowerCase()) {
+        this.success();
+      } else {
+        this.fail();
+      }
+    });
     /*
       TODO:
       Написать обработчик события, который откликается
@@ -91,4 +101,3 @@ class Game {
 }
 
 new Game(document.getElementById('game'))
-
