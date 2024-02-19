@@ -36,11 +36,11 @@ tasksForm.addEventListener('submit', function(event) {
 });
 
 // Обработчик добавления задачи по клику на кнопку "Добавить"
-const addBtn = document.getElementById('tasks__add');
-addBtn.addEventListener('click', addTask);
+//const addBtn = document.getElementById('tasks__add');
+//addBtn.addEventListener('click', addTask);
 
 // Обработчик удаления задачи
-const removeBtns = document.querySelectorAll('.task__remove');
-removeBtns.forEach(btn => {
-  btn.addEventListener('click', removeTask);
-});
+//const removeBtns = document.querySelectorAll('.task__remove');
+//removeBtns.forEach(btn => {
+ // btn.addEventListener('click', removeTask);
+//});
